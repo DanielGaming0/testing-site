@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notícias Diárias - NyxFerion</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Estilos personalizados para a página de notícias diárias */
+        body {
+            background-color: #1a1a1a;
+            color: #fff;
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+        }
+        .daily-news-container {
+            padding: 50px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .daily-news-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .daily-news-title {
+            font-size: 3rem;
+            color: #bb86fc;
+            margin-bottom: 10px;
+        }
+        .daily-news-subtitle {
+            font-size: 1.2rem;
+            color: #ccc;
+        }
+        .news-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        .news-card {
+            background-color: #2c2c2c;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+            padding: 20px;
+        }
+        .news-card:hover {
+            transform: translateY(-10px);
+        }
+        .news-card-content {
+            margin-bottom: 20px;
+        }
+        .news-card-title {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: #bb86fc;
+        }
+        .news-card-description {
+            font-size: 1rem;
+            color: #ccc;
+        }
+        .news-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="logo">
+                <span class="highlight">N</span>yxFerion
+                <a href="/" class="home-icon"> <!-- Ícone de casa -->
+                    <i class="fas fa-home"></i> <!-- Ícone de casa -->
+                </a>
+            </div>
+            <div class="nav-items">
+                <li><a href="/">Início</a></li>
+                <li><a href="/#rules">Regras</a></li>
+                <li><a href="/#modes">Modos de Jogo</a></li>
+                <li><a href="/#connect">Conectar</a></li>
+                <li><a href="/loja">Loja</a></li>
+                <li><a href="/news-server">Notícias do Servidor</a></li>
+            </div>
+            <div class="menu-btn">
+                <div class="menu-btn__lines"></div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Notícias Diárias Section -->
+    <section class="daily-news-container">
+        <div class="daily-news-header" data-aos="fade-down">
+            <h1 class="daily-news-title">Notícias Diárias</h1>
+            <p class="daily-news-subtitle">Acompanhe o que está acontecendo no servidor NyxFerion!</p>
+        </div>
+        <div class="news-grid">
+            <!-- Notícia 1 -->
+            <div class="news-card" data-aos="fade-up">
+                <div class="news-card-content">
+                    <h2 class="news-card-title">Notícia 1</h2>
+                    <p class="news-card-description">Sem Notícias atualmente...</p>
+                </div>
+                <img src="news/news1.png" alt="Notícia 1">
+            </div>
+            <!-- Notícia 2 -->
+            <div class="news-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="news-card-content">
+                    <h2 class="news-card-title">Notícia 2</h2>
+                    <p class="news-card-description">Sem Notícias atualmente...</p>
+                </div>
+                <img src="news/news2.png" alt="Notícia 2">
+            </div>
+            <!-- Notícia 3 -->
+            <div class="news-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="news-card-content">
+                    <h2 class="news-card-title">Notícia 3</h2>
+                    <p class="news-card-description">Sem Notícias atualmente...</p>
+                </div>
+                <img src="news/news3.png" alt="Notícia 3">
+            </div>
+            <!-- Notícia 4 -->
+            <div class="news-card" data-aos="fade-up" data-aos-delay="300">
+                <div class="news-card-content">
+                    <h2 class="news-card-title">Notícia 4</h2>
+                    <p class="news-card-description">Sem Notícias atualmente...</p>
+                </div>
+                <img src="news/news4.png" alt="Notícia 4">
+            </div>
+            <!-- Notícia 5 -->
+            <div class="news-card" data-aos="fade-up" data-aos-delay="400">
+                <div class="news-card-content">
+                    <h2 class="news-card-title">Notícia 5</h2>
+                    <p class="news-card-description">Sem Notícias atualmente...</p>
+                </div>
+                <img src="news/news5.png" alt="Notícia 5">
+            </div>
+            <!-- Notícia 6 -->
+            <div class="news-card" data-aos="fade-up" data-aos-delay="500">
+                <div class="news-card-content">
+                    <h2 class="news-card-title">Notícia 6</h2>
+                    <p class="news-card-description">Sem Notícias atualmente...</p>
+                </div>
+                <img src="news/news6.png" alt="Notícia 6">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 NyxFerion. Todos os direitos reservados.</p>
+        <div class="social-icons">
+            <a href="https://discord.gg/2eBZke2SJY" class="social-icon"><i class="fab fa-discord"></i></a>
+            <a href="https://www.instagram.com/nyx_ferion?igsh=bWR1YnB6YjFnMDNz" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com/@NyxFerion" class="social-icon"><i class="fab fa-youtube"></i></a>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+
+        // Mobile Menu Toggle
+        const menuBtn = document.querySelector('.menu-btn');
+        const navItems = document.querySelector('.nav-items');
+        
+        menuBtn.addEventListener('click', () => {
+            menuBtn.classList.toggle('open');
+            navItems.classList.toggle('active');
+        });
+
+        document.addEventListener('click', (e) => {
+            if (!menuBtn.contains(e.target) && !navItems.contains(e.target)) {
+                menuBtn.classList.remove('open');
+                navItems.classList.remove('active');
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja NyxFerion - Minecraft</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="logo">
+                <span class="highlight">N</span>yxFerion <!-- Texto do logo -->
+                <a href="/" class="home-icon"> <!-- Ícone de início clicável -->
+                    <i class="fas fa-home"></i> <!-- Ícone de casa -->
+                </a>
+            </div>
+            <div class="nav-items">
+                <li><a href="/">Início</a></li>
+                <li><a href="/#rules">Regras</a></li>
+                <li><a href="/#modes">Modos de Jogo</a></li>
+                <li><a href="/#connect">Conectar</a></li>
+                <li><a href="/loja">Loja</a></li>
+                <li><a href="/news-server">Notícias do Servidor</a></li> <!-- Novo item adicionado no final -->
+            </div>
+            <div class="menu-btn">
+                <div class="menu-btn__lines"></div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Loja Section -->
+    <section id="loja" class="loja">
+        <div class="section-title" data-aos="fade-up">
+            <h2>Loja NyxFerion</h2>
+            <div class="title-bar"></div>
+        </div>
+        <div class="rules-container" data-aos="fade-up" data-aos-delay="200">
+            <!-- Produto: Apoiador -->
+            <div class="rule-card">
+                <i class="fas fa-hand-holding-heart"></i>
+                <h3>Apoiador</h3>
+                <p>Apoie o servidor e ganhe benefícios exclusivos!</p>
+                <ul>
+                    <li>Tag especial no Discord</li>
+                    <li>Acesso a canais exclusivos</li>
+                    <li>Vantagens no jogo</li>
+                </ul>
+                <a href="https://discord.gg/2eBZke2SJY" class="btn primary">
+                    <i class="fab fa-discord"></i>
+                    Adquirir no Discord
+                </a>
+            </div>
+
+            <!-- Produto: VIP Clássico -->
+            <div class="rule-card">
+                <i class="fas fa-crown"></i>
+                <h3>VIP Clássico</h3>
+                <p>Tenha acesso a benefícios VIP clássicos!</p>
+                <ul>
+                    <li>Tag VIP no Discord</li>
+                    <li>Comandos exclusivos no jogo</li>
+                    <li>Kits e vantagens especiais</li>
+                </ul>
+                <a href="https://discord.gg/2eBZke2SJY" class="btn primary">
+                    <i class="fab fa-discord"></i>
+                    Adquirir no Discord
+                </a>
+            </div>
+
+            <!-- Produto: Sócio -->
+            <div class="rule-card">
+                <i class="fas fa-star"></i>
+                <h3>Sócio</h3>
+                <p>O melhor pacote com os maiores benefícios!</p>
+                <ul>
+                    <li>Tag de Sócio no Discord</li>
+                    <li>Todos os benefícios VIP</li>
+                    <li>Vantagens exclusivas e suporte prioritário</li>
+                </ul>
+                <a href="https://discord.gg/2eBZke2SJY" class="btn primary">
+                    <i class="fab fa-discord"></i>
+                    Adquirir no Discord
+                </a>
+            </div>
+        </div>
+        <div class="loja-info" data-aos="fade-up" data-aos-delay="400">
+            <p>Para mais informações sobre os produtos e como adquiri-los, entre no nosso Discord e confira todos os detalhes!</p>
+            <a href="https://discord.gg/2eBZke2SJY" class="btn secondary">
+                <i class="fab fa-discord"></i>
+                Entrar no Discord
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 NyxFerion. Todos os direitos reservados.</p>
+        <div class="social-icons">
+            <a href="https://discord.gg/2eBZke2SJY" class="social-icon"><i class="fab fa-discord"></i></a>
+            <a href="https://www.instagram.com/nyx_ferion?igsh=bWR1YnB6YjFnMDNz" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com/@NyxFerion" class="social-icon"><i class="fab fa-youtube"></i></a>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+
+        // Mobile Menu Toggle
+        const menuBtn = document.querySelector('.menu-btn');
+        const navItems = document.querySelector('.nav-items');
+        
+        menuBtn.addEventListener('click', () => {
+            menuBtn.classList.toggle('open');
+            navItems.classList.toggle('active');
+        });
+
+        // Close menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!menuBtn.contains(e.target) && !navItems.contains(e.target)) {
+                menuBtn.classList.remove('open');
+                navItems.classList.remove('active');
+            }
+        });
+    </script>
+</body>
+</html>
